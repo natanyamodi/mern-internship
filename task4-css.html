@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Task-4</title>
+
+  <style>
+    .green-button {
+      background-color: rgb(2, 160, 81);
+    }
+
+    .blue-button {
+      background-color: rgb(2, 151, 237);
+    }
+
+    .red-button {
+      background-color: rgb(253, 71, 71);
+    }
+
+    .grey-button {
+      background-color: rgb(92, 92, 92);
+    }
+
+    div button {
+      border: 0px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      width: 25px;
+      padding: 30px 25px;
+
+      margin-bottom: 10px;
+    }
+
+    .box {
+      margin-left: 50%;
+      transform: translate(-50%);
+      border: 1px solid black;
+      box-sizing: border-box;
+      height: 470px;
+      width: 640px;
+    }
+
+    #head {
+      width: 15%;
+      float: left;
+    }
+
+    #ani {
+      width: 85%;
+      float: left;
+      padding-top: 0px;
+      align-items: flex-start;
+    }
+
+    button:hover {
+      transition: 0.2s;
+      padding: 31px 35px;
+    }
+    
+    h1{
+      display: inline; 
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="box">
+      <br />
+      <div id="head">
+        <button class="green-button"></button><br />
+        <button class="blue-button"></button><br />
+        <button class="red-button"></button><br />
+        <button class="grey-button"></button>
+      </div>
+
+      <div id="ani">
+        <h1>
+          Hoverable Sidenav Buttons
+        </h1>
+        <p>
+          Hover over the buttons in the left side navigation to open them.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

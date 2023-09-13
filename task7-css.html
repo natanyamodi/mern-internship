@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Task-7</title>
+
+  <style>
+    .container {
+      width: 100%;
+      height: 580px;
+      border: 1px solid rgb(122, 7, 57);
+      background-color: rgb(135, 33, 77);
+      margin: auto;
+    }
+
+    .form-box {
+      display: flex;
+      justify-content: center;
+      border: 1px solid rgb(116, 5, 49);
+      width: 700px;
+      height: 520px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: rgb(114, 7, 50);
+      color: white;
+    }
+
+    .form-content{
+      margin-top: 50px;
+    }
+
+    .form-field {
+      margin-top: 15px;
+      width: 180px;
+      margin-left: 0px;
+      padding: 5px;
+    }
+
+    .radio-field {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+    }
+
+    .select-field {
+      width: 135px;
+      margin-left: 0px;
+      margin-left: 38px;
+    }
+
+    .submit-button {
+      width: 320px;
+      border-radius: 5px;
+      font-size: large;
+      border-color: white;
+      font-weight: bold; 
+    }
+
+    .text-field {
+        margin-left: 63px;
+    }
+
+    .email-field {
+      margin-left: 67px;
+    }
+
+    .password-field {
+      margin-left: 36px;
+    }
+
+    .textarea-field {
+      margin-left: 58px;
+      margin-top: 0px;
+    }
+
+    .zip-code-field {
+      margin-left: 41px;
+      margin-bottom: 0px;
+    }
+
+    .gender-label {
+      width: 120px; 
+      margin-left: 10px; 
+      display: inline-block;
+    }
+
+    .gender-radio {
+      margin-left: 5px; 
+      display: inline-block;
+    }
+
+    .about-text {
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <div class="form-content">
+        <label class="form-label" for="name">Name:</label>
+        <input class="form-field text-field" id="name" type="text" placeholder="Your name" /><br />
+
+        <label class="form-label" for="email">Email:</label>
+        <input class="form-field email-field" id="email" type="email" placeholder="Your email" /><br />
+
+        <label class="form-label" for="password">Password:</label>
+        <input class="form-field password-field" id="password" type="password" /><br />
+
+        <label class="form-label" for="phone">Phone Number:</label>
+        <input class="form-field" id="phone" type="number" /><br />
+
+        <div class="gender-label">
+          <label class="form-label" for="gender">Gender:</label>
+        </div>
+        <div class="gender-radio">
+          <label for="male">Male:</label>
+          <input type="radio" id="male" class="form-field radio-field" name="gender" value="Male" />
+
+          <label for="female">Female:</label>
+          <input type="radio" id="female" class="form-field radio-field" name="gender" value="Female" />
+
+          <label for="other">Other:</label>
+          <input type="radio" id="other" class="form-field radio-field" name="gender" value="Other" />
+        </div>
+
+        <br />
+        <label class="form-label" for="language">Language:</label>
+        <select class="form-field select-field" id="language" name="language">
+          <option value="select">Select language</option>
+          <option value="english">English</option>
+          <option value="marathi">Marathi</option>
+          <option value="hindi">Hindi</option>
+        </select>
+
+        <br />
+        <label class="form-label" for="zip">Zip Code:</label>
+        <input class="form-field zip-code-field" id="zip" type="number" />
+
+        <table>
+          <tr>
+            <td>About:</td>
+            <td>
+              <textarea
+                rows="2"
+                class="form-field textarea-field about-text"
+                id="about"
+                placeholder="Write about yourself..."
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+        <input type="submit" class="submit-button" value="Register" /><br />
+      </div>
+    </div>
+  </div>
+</body>
+</html>
